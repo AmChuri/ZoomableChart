@@ -8,6 +8,7 @@ import {
   Chart,
   ChartOptions,
   Filler,
+  Legend,
   LinearScale,
   LineElement,
   PointElement,
@@ -29,7 +30,7 @@ Chart.register(
   Tooltip,
   Filler,
   TimeScale,
-  // Decimation,
+  Legend,
   zoomPlugin
 );
 
@@ -104,6 +105,8 @@ export default function TrafficChart() {
       // decimation: decimation,
       legend: {
         display: true,
+        position: 'bottom',
+        labels: { color: 'darkred' },
       },
       zoom: zoomOptions,
     },
