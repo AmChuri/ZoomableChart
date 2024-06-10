@@ -39,10 +39,14 @@ interface Temp {
   y: number;
 }
 export default function TrafficChart() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
   const borderColor = useComputedStyle('--bs-border-color');
   const bodyColor = useComputedStyle('--bs-body-color');
-  const [startdate, setStartdate] = useState('');
-  const [enddate, setEnddate] = useState('');
+  const [startdate, setStartdate] = useState('2024-06-10');
+  const [enddate, setEnddate] = useState(`${year}-${month}-${day}`);
   const { data, loading, error } = useFetchMetrics(
     startdate,
     enddate

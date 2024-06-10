@@ -13,6 +13,9 @@ export default async function Page() {
             <div>
               <h4 className="mb-0">{dict.dashboard.traffic.title}</h4>
             </div>
+            {/* <div>
+              <DateRangePicker />
+            </div> */}
           </div>
           <div
             style={{
