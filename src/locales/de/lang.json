@@ -1,0 +1,330 @@
+{
+  "login": {
+    "title": "Anmelden",
+    "description": "Melden Sie sich bei Ihrem Konto an",
+    "form": {
+      "username": "Benutzername",
+      "password": "Passwort",
+      "submit": "Anmelden"
+    },
+    "forgot_password": "Passwort vergessen?",
+    "signup": {
+      "title": "Registrieren",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua."
+    },
+    "message": {
+      "auth_failed": "Ungültiger Benutzername oder Passwort"
+    }
+  },
+  "pagination": {
+    "summary": "Zeige {{from}} bis {{to}} von {{total}} Ergebnissen",
+    "rows_per_page": "Zeilen pro Seite"
+  },
+  "signup": {
+    "title": "Registrieren",
+    "description": "Erstellen Sie Ihr Konto",
+    "register_now": "Jetzt registrieren!",
+    "form": {
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "confirm_password": "Passwort bestätigen",
+      "submit": "Konto erstellen"
+    }
+  },
+  "action": {
+    "info": "Info",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "submit": "Absenden",
+    "submitting": "Absenden...",
+    "reset": "Zurücksetzen"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "auto": "Automatisch"
+  },
+  "dashboard": {
+    "featured": {
+      "cpu": "CPU-Nutzung",
+      "income": "Einnahmen",
+      "conversion_rate": "Konversionsrate",
+      "sessions": "Sitzungen",
+      "action": {
+        "action1": "Aktion",
+        "action2": "Eine weitere Aktion",
+        "action3": "Etwas anderes"
+      }
+    },
+    "traffic": {
+      "title": "Statistiken",
+      "duration": "Januar - Juli 2021",
+      "option": {
+        "day": "Tag",
+        "week": "Woche",
+        "month": "Monat",
+        "year": "Jahr"
+      },
+      "chart": {
+        "xlabel1": "Januar",
+        "xlabel2": "Februar",
+        "xlabel3": "März",
+        "xlabel4": "April",
+        "xlabel5": "Mai",
+        "xlabel6": "Juni",
+        "xlabel7": "Juli"
+      },
+      "users": "Benutzer",
+      "views": "Ansichten",
+      "category1": "Besuche",
+      "category2": "Einzigartig",
+      "category3": "Seitenansichten",
+      "category4": "Neue Benutzer",
+      "category5": "Absprungrate"
+    },
+    "social": {
+      "facebook": {
+        "label1": "Freunde",
+        "label2": "Feeds"
+      },
+      "twitter": {
+        "label1": "Follower",
+        "label2": "Tweets"
+      },
+      "instagram": {
+        "label1": "Kontakte",
+        "label2": "Feeds"
+      }
+    },
+    "sales": {
+      "title": "Verkehr & Verkäufe",
+      "stats": {
+        "stat1": "Neue Kunden",
+        "stat2": "Wiederkehrende Kunden",
+        "stat3": "Seitenaufrufe",
+        "stat4": "Organisch"
+      },
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "male": "Männlich",
+      "female": "Weiblich",
+      "organic": "Organische Suche",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    },
+    "listing": {
+      "headers": {
+        "header1": "Benutzer",
+        "header2": "Nutzung",
+        "header3": "Zahlungsmethode",
+        "header4": "Aktivität"
+      },
+      "user_status": {
+        "new": "Neu",
+        "recurring": "Wiederkehrend"
+      },
+      "registered": "Registriert",
+      "last_login": "Letzter Login",
+      "usage_duration": "11. Juni 2020 - 10. Juli 2020",
+      "registered_at": "1. Januar 2020",
+      "items": {
+        "item1": {
+          "name": "Yiorgos Avraamu",
+          "login_at": "vor 10 Sek."
+        },
+        "item2": {
+          "name": "Avram Tarasios",
+          "login_at": "vor 5 Min."
+        },
+        "item3": {
+          "name": "Quintin Ed",
+          "login_at": "vor 1 Std."
+        },
+        "item4": {
+          "name": "Enéas Kwadwo",
+          "login_at": "letzten Monat"
+        },
+        "item5": {
+          "name": "Agapetus Tadeáš",
+          "login_at": "letzte Woche"
+        },
+        "item6": {
+          "name": "Friderik Dávid",
+          "login_at": "gestern"
+        }
+      }
+    }
+  },
+  "pokemons": {
+    "title": "Pokémon",
+    "add_new": "Neu hinzufügen",
+    "attribute": {
+      "name": "Name",
+      "type": "Typ",
+      "egg_group": "Ei-Gruppe",
+      "hp": "KP",
+      "attack": "Ang.",
+      "defense": "Vert.",
+      "sp_attack": "Spez.-Ang.",
+      "sp_defense": "Spez.-Vert.",
+      "speed": "Init.",
+      "total": "Gesamt"
+    }
+  },
+  "featured_nav": {
+    "dashboard": "Dashboard",
+    "users": "Benutzer",
+    "settings": "Einstellungen"
+  },
+  "notification": {
+    "message": "Sie haben {{total}} Benachrichtigungen",
+    "items": {
+      "new_user": "Neuer Benutzer registriert",
+      "deleted_user": "Benutzer gelöscht",
+      "sales_report": "Verkaufsbericht ist fertig",
+      "new_client": "Neuer Kunde",
+      "server_overloaded": "Server überlastet"
+    },
+    "server": {
+      "title": "Server",
+      "processes": "Prozesse",
+      "cores": "Kerne",
+      "items": {
+        "cpu": "CPU-Auslastung",
+        "memory": "Speicherauslastung",
+        "ssd1": "SSD 1 Auslastung"
+      }
+    }
+  },
+  "task": {
+    "message": "Sie haben {{total}} ausstehende Aufgaben",
+    "items": {
+      "task1": "Upgrade Next.JS",
+      "task2": "Pokémons trainieren",
+      "task3": "Pokedex vervollständigen",
+      "task4": "Alle Schillernden fangen",
+      "task5": "Alle Arenen besiegen"
+    },
+    "view_all": "Alle Aufgaben anzeigen"
+  },
+  "messages": {
+    "message": "Sie haben {{total}} Nachrichten",
+    "items": {
+      "item1": {
+        "user": "John Doe",
+        "time": "Gerade eben",
+        "title": "Pikachu streicheln",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+      },
+      "item2": {
+        "user": "John Doe",
+        "time": "vor 5 Min.",
+        "title": "Evoli anziehen",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+      },
+      "item3": {
+        "user": "John Doe",
+        "time": "13:52",
+        "title": "Gemeinsames Training",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+      },
+      "item4": {
+        "user": "John Doe",
+        "time": "16:03",
+        "title": "Zur Safari-Zone gehen",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+      }
+    }
+  },
+  "profile": {
+    "account": {
+      "title": "Konto",
+      "items": {
+        "updates": "Updates",
+        "messages": "Nachrichten",
+        "tasks": "Aufgaben",
+        "comments": "Kommentare"
+      }
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "items": {
+        "profile": "Profil",
+        "settings": "Einstellungen",
+        "payments": "Zahlungen",
+        "projects": "Projekte"
+      }
+    },
+    "lock_account": "Konto sperren",
+    "logout": "Abmelden"
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "library": "Bibliothek",
+    "data": "Daten"
+  },
+  "sidebar": {
+    "items": {
+      "dashboard": "Dashboard",
+      "sample": "Beispiel",
+      "theme": "Thema",
+      "colors": "Farben",
+      "typography": "Typografie",
+      "components": "Komponenten",
+      "accordion": "Akkordeon",
+      "breadcrumb": "Breadcrumb",
+      "cards": "Karten",
+      "carousel": "Karussell",
+      "collapse": "Zusammenklappen",
+      "list_group": "Listengruppe",
+      "navs": "Navs",
+      "pagination": "Seitennummerierung",
+      "popovers": "Popovers",
+      "progress": "Fortschritt",
+      "scrollspy": "Scrollspy",
+      "spinners": "Spinner",
+      "tables": "Tabellen",
+      "tabs": "Tabs",
+      "tooltips": "Tooltips",
+      "buttons": "Tasten",
+      "buttons_group": "Tastengruppen",
+      "dropdowns": "Dropdowns",
+      "charts": "Diagramme",
+      "form_control": "Formularsteuerung",
+      "select": "Auswählen",
+      "checks_and_radios": "Checks und Radios",
+      "range": "Bereich",
+      "input_group": "Eingabegruppe",
+      "floating_labels": "Schwebende Beschriftungen",
+      "layout": "Layout",
+      "validation": "Validierung",
+      "core_ui_icons": "CoreUI-Icons",
+      "core_ui_icons_brand": "CoreUI-Icons - Marke",
+      "core_ui_icons_flag": "CoreUI-Icons - Flagge",
+      "alerts": "Warnungen",
+      "badge": "Abzeichen",
+      "modals": "Modale",
+      "toasts": "Toasts",
+      "widgets": "Widgets",
+      "login": "Anmelden",
+      "register": "Registrieren",
+      "error404": "Fehler 404",
+      "error500": "Fehler 500",
+      "docs": "Dokumente",
+      "try_core_ui_pro": "CoreUI PRO ausprobieren",
+      "base": "Basis",
+      "forms": "Formulare",
+      "icons": "Symbole",
+      "notifications": "Benachrichtigungen",
+      "extras": "Extras",
+      "pages": "Seiten"
+    }
+  }
+}
