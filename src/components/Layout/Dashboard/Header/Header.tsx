@@ -1,6 +1,5 @@
 import HeaderNotificationNav from '@/components/Layout/Dashboard/Header/HeaderNotificationNav';
 import HeaderSidebarToggler from '@/components/Layout/Dashboard/Header/HeaderSidebarToggler';
-import Link from 'next/link';
 import { Container } from 'react-bootstrap';
 
 export default function Header() {
@@ -11,12 +10,6 @@ export default function Header() {
         className="header-navbar d-flex align-items-center px-0 px-sm-3"
       >
         <HeaderSidebarToggler />
-        <Link href="/" className="header-brand d-md-none">
-          <svg width="80" height="46">
-            <title> Logo</title>
-            <use xlinkHref="/assets/brand/coreui.svg#full" />
-          </svg>
-        </Link>
 
         <div className="header-nav ms-auto">
           <HeaderNotificationNav />

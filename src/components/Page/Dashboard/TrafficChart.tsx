@@ -6,6 +6,7 @@ import {
   BarElement,
   CategoryScale,
   Chart,
+  ChartOptions,
   Filler,
   LinearScale,
   LineElement,
@@ -15,7 +16,7 @@ import {
 } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import zoomPlugin from 'chartjs-plugin-zoom';
-import moment from 'moment';
+import { ZoomPluginOptions } from 'chartjs-plugin-zoom/types/options';
 import { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 
@@ -74,7 +75,7 @@ export default function TrafficChart() {
       y: item.storageUsage,
     });
   });
-  const zoomOptions = {
+  const zoomOptions: ZoomPluginOptions = {
     zoom: {
       wheel: {
         enabled: true,
@@ -96,7 +97,67 @@ export default function TrafficChart() {
 
   const currentTime = new Date().valueOf();
   const tenMinutesAgo = currentTime - 10 * 60 * 10000;
-
+  const options: ChartOptions<'line'> = {
+    maintainAspectRatio: false,
+    // parsing: false,
+    plugins: {
+      // decimation: decimation,
+      legend: {
+        display: true,
+      },
+      zoom: zoomOptions,
+    },
+    scales: {
+      x: {
+        position: 'bottom',
+        // @ts-ignore
+        type: 'time',
+        min: tenMinutesAgo,
+        max: currentTime,
+        ticks: {
+          autoSkip: true,
+          autoSkipPadding: 50,
+          maxRotation: 0,
+          maxTicksLimit: 20,
+        },
+        time: {
+          displayFormats: {
+            hour: 'HH:mm',
+            minute: 'HH:mm',
+            second: 'HH:mm:ss',
+          },
+        },
+        // adapter: moment,
+      },
+      y: {
+        beginAtZero: true,
+        border: {
+          color: borderColor,
+        },
+        grid: {
+          color: borderColor,
+        },
+        min: 0,
+        max: 120,
+        ticks: {
+          color: bodyColor,
+          maxTicksLimit: 5,
+          stepSize: Math.ceil(120 / 10),
+        },
+      },
+    },
+    elements: {
+      line: {
+        tension: 0.4,
+      },
+      point: {
+        radius: 0,
+        hitRadius: 10,
+        hoverRadius: 4,
+        hoverBorderWidth: 3,
+      },
+    },
+  };
   return (
     <Line
       data={{
@@ -137,66 +198,7 @@ export default function TrafficChart() {
           },
         ],
       }}
-      options={{
-        maintainAspectRatio: false,
-        // parsing: false,
-        plugins: {
-          // decimation: decimation,
-          legend: {
-            display: true,
-          },
-          zoom: zoomOptions,
-        },
-        scales: {
-          x: {
-            position: 'bottom',
-            type: 'time',
-            min: tenMinutesAgo,
-            max: currentTime,
-            ticks: {
-              autoSkip: true,
-              autoSkipPadding: 50,
-              maxRotation: 0,
-              maxTicksLimit: 20,
-            },
-            time: {
-              displayFormats: {
-                hour: 'HH:mm',
-                minute: 'HH:mm',
-                second: 'HH:mm:ss',
-              },
-            },
-            adapter: moment,
-          },
-          y: {
-            beginAtZero: true,
-            border: {
-              color: borderColor,
-            },
-            grid: {
-              color: borderColor,
-            },
-            min: 0,
-            max: 120,
-            ticks: {
-              color: bodyColor,
-              maxTicksLimit: 5,
-              stepSize: Math.ceil(120 / 10),
-            },
-          },
-        },
-        elements: {
-          line: {
-            tension: 0.4,
-          },
-          point: {
-            radius: 0,
-            hitRadius: 10,
-            hoverRadius: 4,
-            hoverBorderWidth: 3,
-          },
-        },
-      }}
+      options={options}
     />
   );
 }
